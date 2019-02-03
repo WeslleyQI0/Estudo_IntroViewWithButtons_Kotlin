@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 tools:context=".MainActivity">
+
+    <include layout="@layout/content_main" />
+
+    <LinearLayout
+            android:id="@+id/layoutButon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom|end"
+            android:layout_alignBottom="@id/sliderViewPager"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btLogin"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/button_selector2"
+                android:layout_margin="10dp"
+                android:text="login" />
+
+        <Button
+                android:id="@+id/btRegister"
+                android:layout_width="160dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/button_selector"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Register" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
