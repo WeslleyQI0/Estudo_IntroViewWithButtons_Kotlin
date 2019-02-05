@@ -29,7 +29,7 @@
         <Button
                 android:id="@+id/btRegister"
                 android:layout_width="160dp"
-                android:textColor="#fff"
+                android:textColor="@color/colorAccent"
                 android:textStyle="bold"
                 android:background="@drawable/button_selector"
                 android:layout_height="wrap_content"

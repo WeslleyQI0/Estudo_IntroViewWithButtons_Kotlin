@@ -23,10 +23,15 @@ import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
 import kotlinx.android.synthetic.main.activity_main.*
 import android.text.Spanned
-
-
-
-
+import android.view.animation.DecelerateInterpolator
+import android.R.attr.start
+import android.support.v4.view.ViewCompat
+import android.support.v4.view.ViewPropertyAnimatorCompat
+import android.view.ViewGroup
+import android.view.animation.AlphaAnimation
+import android.view.animation.Animation
+import android.view.animation.AnimationSet
+import kotlinx.android.synthetic.main.slider_layout.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -34,6 +39,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mDots: Array<TextView?>
     private lateinit var mDotsLayout: LinearLayout
     private lateinit var mSliderViewPager: ViewPager
+
+    val STARTUP_DELAY = 300L
+    val ANIM_ITEM_DURATION = 1000L
+    val ITEM_DELAY = 300
+    private val animationStarted = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -151,12 +161,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun vibrate(){
+    private fun vibrate() {
         val vibrator = application.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            vibrator.vibrate(VibrationEffect.createOneShot(200, VibrationEffect.DEFAULT_AMPLITUDE))
+            vibrator.vibrate(VibrationEffect.createOneShot(60, VibrationEffect.DEFAULT_AMPLITUDE))
         } else {
-            vibrator.vibrate(200)
+            vibrator.vibrate(60)
         }
     }
 }

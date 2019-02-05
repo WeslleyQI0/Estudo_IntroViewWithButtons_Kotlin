@@ -10,28 +10,30 @@
 
     <ImageView
         android:id="@+id/sliderImage"
-        android:layout_width="wrap_content"
-        android:src="@drawable/group10"
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_library"
         android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/sliderHeader"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:text="Eat"
         android:layout_marginTop="16dp"
         android:textStyle="bold"
         android:textColor="#fff"
+        android:gravity="center"
         android:textSize="28sp"
         android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/sliderDesc"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:textColor="#fff"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:text="Eat ecunefc crc f rttbtbtuweuc wuf cuw urc wc fhcwrhc wdcuhihciifwhfcscfcwe 3rvv rv3rv"
         android:textSize="18sp"
+        android:layout_marginBottom="16dp"
         android:layout_height="wrap_content" />
 
 </LinearLayout>

@@ -15,17 +15,19 @@ class SliderAdapter(internal var context: Context) : PagerAdapter() {
 
     private var slider_images = intArrayOf(
 
-        R.drawable.group10, R.drawable.group11, R.drawable.group12
+        R.drawable.ic_library, R.drawable.ic_book_notes, R.drawable.ic_read_progress
     )
 
     private var slider_heading = arrayOf(
 
-        "EAT", "SLEEP", "CODE"
+        "Crie Bibliotecas", "Faça anotações", "Acopanhe seu Progresso"
     )
 
     private var slider_desc = arrayOf(
 
-        "EAT DESC", "SLEEP DESC", "CODE DESC"
+        "Organize todos seus livros, separe livros lidos, lendo, abadonados e mais! ",
+        "Adicione notas de sua citações favoritas e faça anotações de sua reflexões!",
+        "Monitore seu progresso de leitura do inicio ao fim!"
     )
 
     override fun getCount(): Int {
